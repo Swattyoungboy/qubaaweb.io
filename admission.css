@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+    
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+ 
+}
+
+/* ************************************************ NAVIGATION *************************************************/
+.navlist{
+    position: relative;
+ 
+    width: 105%;
+    padding: 5px 7vw;
+    /* THIS CAUSES THE BACKGROUND TO EXTEND TO MENU*/
+    position: fixed; 
+ /*  background-color: green; */
+ /*  padding-top: 30px;
+   padding-bottom: 30px; */
+  /* align-items: center; */
+  background: rgba(0, 128, 0, 0.616); 
+ 
+   
+  
+}
+.navlist .logo{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    margin-left: -70px;
+    margin-top: -55px;  /* PANDISHA LOGO */
+
+}
+
+
+
+
+.navlist ul{
+    display: flex;
+   list-style: none;
+    align-items: center; 
+  
+}
+
+.navlist ul li{
+    position: relative;
+   
+    float:right;
+    padding-top: 30px;  /* PADDING OF THE MENU */
+    padding-bottom: 30px;  /* PADDING OF THE MENU */
+    padding-left: 15px;
+}
+/* ********************** */
+
+
+
+.navlist ul li a{
+    font-size: 14px;
+    
+    
+}
+
+.navlist ul li:first-child{
+    flex: 1;
+}
+
+.navlist ul h4{
+    font-family: serif;
+    color: #fff;
+}
+
+.navlist ul a{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+/********************************************* Hover effect *********************************** */
+
+.navlist ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+ .navlist ul li a:hover::after{
+     margin-left: 7px;
+    width: 100%;
+}
+
+
+
+/* ****************************************** CONTAINER  **************************************/
+.sub-container{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(#000000c3,#000000c3),url("/bg3.webp");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-container h1{
+    padding-top: 300px;
+        font-family: serif;
+        letter-spacing: 4px;
+
+}
+@media(max-width:991px){
+    .sub-container h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+ 
+}
+
+/* ************************************************ NAVIGATION *************************************************/
+.navlist{
+    position: relative;
+ 
+    width: 105%;
+    padding: 5px 7vw;
+    /* THIS CAUSES THE BACKGROUND TO EXTEND TO MENU*/
+    position: fixed; 
+ /*  background-color: green; */
+ /*  padding-top: 30px;
+   padding-bottom: 30px; */
+  /* align-items: center; */
+  background: rgba(0, 128, 0, 0.616); 
+ 
+   
+  
+}
+.navlist .logo{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    margin-left: -70px;
+    margin-top: -55px;  /* PANDISHA LOGO */
+
+}
+
+
+
+
+.navlist ul{
+    display: flex;
+   list-style: none;
+    align-items: center; 
+  
+}
+
+.navlist ul li{
+    position: relative;
+    float:right;
+    padding-top: 30px;  /* PADDING OF THE MENU */
+    padding-bottom: 30px;  /* PADDING OF THE MENU */
+    padding-left: 15px;
+}
+/* ********************** */
+
+
+
+.navlist ul li a{
+    font-size: 14px;
+
+    
+}
+
+.navlist ul li:first-child{
+    flex: 1;
+}
+
+.navlist ul h4{
+    font-family: serif;
+    color: #fff;
+}
+
+.navlist ul a{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+/********************************************* Hover effect *********************************** */
+
+.navlist ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+ .navlist ul li a:hover::after{
+     margin-left: 7px;
+    width: 100%;
+}
+
+
+
+/* ****************************************** CONTAINER  **************************************/
+.sub-container{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(#000000c3,#000000c3),url("bg3.webp");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-container h1{
+    padding-top: 300px;
+        font-family: serif;
+        letter-spacing: 4px;
+
+}
+@media(max-width:991px){
+    .sub-container h1{
+        font-size: 20px;
+    }
+}
+
+
+.admission{
+   
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  background-color: #CAE6EF;
+}
+.admission .inner{
+    width: 40%;
+    margin: auto;
+}
+.admission .inner h3{
+    padding-bottom: 20px;
+    color: rgb(19, 19, 82);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.admission .inner >h3::before, .admission .inner>h3::after{
+    content: "------";
+    letter-spacing: -5px;
+    margin: 0 10px;
+}
+
+.admission .inner p{
+    letter-spacing: 2px;
+}
+@media(max-width: 991px){
+    .admission .inner{
+       width: 70%;
+    }
+    .admission .inner h3{
+        font-size: 18px;
+    }
+    .admission .inner p{
+        font-size: 13px;
+    }
+}
+ 
+/*  ******************************************************** admission *********************************************/ 
+.steps{
+    margin-top: 20px;
+}
+.steps .row{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.steps .col{
+    flex-basis: 48%;
+}
+.steps .col img{
+    width: 100%;
+}
+.steps .col h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.steps .col p{
+    font-family:  sans-serif;
+    letter-spacing: 1px;
+    font-size: 17px;
+
+}
+.steps button{
+    margin-top: 10px;
+    padding: 10px;
+    background: rgb(70, 185, 201);
+    border: 1px solid #f80;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.steps button:hover{
+    background-color: rgb(85, 175, 85);
+    transition: 1s ;
+}
+.steps .row .col .mail{
+    
+    margin-left: 170px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    color: rebeccapurple;
+}
+@media(max-width:991px){
+    .steps .row{
+        flex-direction: column;
+    }
+    .steps .row .col .mail{
+        margin-left: 20px;
+    }
+}
+
+
+
+/*  ******************************************************** END OF REGISTRATION *********************************************/ 
+
+
+
+
+/*  ******************************************************** footer *********************************************/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(56, 56, 55, 0.253);
+   
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer .icons .fa{
+    color: #f44336;
+    margin: 0px 8px;
+    padding: 18px 0;
+}
+.footer .fa-smile-o{
+    color: #f44336;
+}
+
+
+/*  ******************************************************** footer *********************************************/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(56, 56, 55, 0.253);
+  
+} 
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer .icons .fa{
+    color: #f44336;
+    margin: 0px 8px;
+    padding: 18px 0;
+}
+.footer .fa-smile-o{
+    color: #f44336;
+}

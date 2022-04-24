@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+    
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+ 
+}
+
+/* ************************************************ NAVIGATION *************************************************/
+
+nav{
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-color: #053742;
+    background: #4B4B4B;
+     background: #008000;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+    /* ADDED */
+   justify-content: space-between;
+ 
+}
+
+/* Styling Logo*/
+
+.logo{
+    padding: 3vh 3vw;
+    text-align: left;
+    width: 20vw;
+}
+
+.logo img{
+  /*  height: auto;
+    width: 4rem;  */
+    margin-top: -32px;
+    height: 130px;
+    width: 130px;
+
+}
+
+/* Styling Navigation Links*/
+
+.nav-links{
+    width: 50vw;
+    display: flex;
+    padding: 0 0.7px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 600;
+  margin-right: 30px;
+}
+
+.nav-links li a{
+    margin: 0 0.7vw;
+    text-decoration: none;
+    transition: all ease-in-out 350ms;
+    padding: 10px;
+    color:#f2f5f7;
+    font-size: 13px;
+}
+
+.nav-links li a:hover{
+    color: #00c6d7;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    border-radius: 5px;
+    transition: all 0.9s ease;
+}
+
+.nav-links li{
+    position:relative;
+    float: right;
+}
+
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+
+
+/*Navigation Icon Styling*/
+
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+/*Responsive Adding Media Queries*/
+
+@media screen and (max-width: 1300px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        background: #053742;
+        background: #f44336;
+        position: fixed;
+        opacity: 1;
+        height: 70vh;
+        width: 100%;
+        top: 15%;
+       
+        flex-direction: column;
+      clip-path: circle(50px at 90% -20%); 
+      /*   -webkit-clip-path: circle(50px at 90% -10%);  */
+        transition: all 1s ease-out;
+        pointer-events: none;
+        
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 70% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade{
+        opacity: 1;
+    }
+
+    /* Navigation Bar Icon on Click*/
+
+        .toggle .bars1{
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .toggle .bars2{
+            transition: all 0s ease;
+            width: 0;
+        }
+
+        .toggle .bars3{
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+}
+
+
+/* ****************************************** CONTAINER  **************************************/
+.sub-container{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(#000000c3,#000000c3),url("bg3.webp");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-container h1{
+    padding-top: 300px;
+        font-family: serif;
+        letter-spacing: 4px;
+
+}
+@media(max-width:991px){
+    .sub-container h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+/*  ******************************************************** LOCATION *********************************************/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+    
+}
+.contact-us .row{
+   display: flex;
+   justify-content: space-between;
+}
+.contact-us .row .col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    
+}
+.contact-us .row .col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-us .row .col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-us .row .col div p{
+    padding: 0;
+}
+.contact-us .row .col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-us .row .col input, .contact-us .row .col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.contact-us .row .col button{
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(70, 185, 201);
+    border: 1px solid #f80;
+}
+.contact-us .row .col button:hover{
+    background-color: rgb(85, 175, 85);
+    transition: 1s ;
+}
+
+@media(max-width:991px){
+    .contact-us .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/*  ******************************************************** footer *********************************************/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(56, 56, 55, 0.253);
+   
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer .icons .fa{
+    color: #f44336;
+    margin: 0px 8px;
+    padding: 18px 0;
+}
+.footer .fa-smile-o{
+    color: #f44336;
+}
